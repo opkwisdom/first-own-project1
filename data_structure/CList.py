@@ -6,8 +6,8 @@ from gettext import dngettext
 class Node:
     def __init__(self, data=None, next=None, prev=None):
         self.data = data
-        self.next = next or prev
-        self.prev = prev or next
+        self.next = next or self
+        self.prev = prev or self
 
 class DoubleLinkedList:
     def __init__(self):
@@ -72,5 +72,13 @@ class DoubleLinkedList:
         while not self.is_empty():
             self.remove_first()
         self.no = 0
+    
+    def print_all(self):
+        ptr = self.head.next
+        print(f'{ptr.data}',end='')
+        while ptr is not self.head:
+            print('->', end='')
+            ptr = ptr.next
+            print(f'{ptr.data}',end='')
 
         

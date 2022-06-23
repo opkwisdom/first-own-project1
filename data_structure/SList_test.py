@@ -1,4 +1,4 @@
-# SList test
+# SList_test
 
 from SList import SList
 
