@@ -3,6 +3,8 @@
 # 객체 지향 언어인 python 비교적 구현 쉬움
 
 from dataclasses import dataclass
+# dataclass(): __init__() 나 __repr__() 과 같은 생성된 특수 메서드를
+# 사용자 정의 클래스에 자동으로 추가하는 데코레이터와 함수를 제공합니다.
 
 
 class Node:
