@@ -1,14 +1,21 @@
 from tree import BinarySearchTree as Tree
-
-num = [3, 10, 2, 4, 8, 11]
+import numpy as np
 
 newTree = Tree()
-newTree.setRoot(7)
+newTree.setRoot(20)
 
+num = np.random.randint(1, 40, 10)
 for i in num:
     newTree.push(i)
 
-newTree.postorder(newTree.getRoot())
-newTree.remove(3)
+print(num)
+rootNode = newTree.getRoot()
+print("Inorder")
+newTree.Inorder(rootNode)
 print()
-newTree.postorder(newTree.getRoot())
+print("Preorder")
+newTree.Preorder(rootNode)
+print()
+print("Postorder")
+newTree.Postorder(rootNode)
+print()
