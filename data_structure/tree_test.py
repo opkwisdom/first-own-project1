@@ -1,3 +1,4 @@
+# 첫번째 트리
 from tree import BinarySearchTree as Tree
 import numpy as np
 

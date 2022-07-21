@@ -1,4 +1,5 @@
 # 트리 구조: 자료들 간의 계층 표현
+# 첫 트리
 class Node:
     def __init__(self, value=None, left=None, right=None):
         self.value = value
